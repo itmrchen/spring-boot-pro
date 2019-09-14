@@ -1,1 +1,3 @@
-index jsp
+<body>
+${message}
+</body>
