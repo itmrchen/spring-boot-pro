@@ -1,4 +1,4 @@
-package com.java8.web.thymeleaf.engine;
+package com.java8.web.template.engine;
 
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.core.io.DefaultResourceLoader;
