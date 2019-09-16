@@ -1,8 +1,11 @@
 package com.java8.web.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * Hello World {@link Controller}
@@ -12,6 +15,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
  */
 @Controller
 public class HelloWorldController {
+    @RequestMapping(value = "/index")
+    public String index(@RequestParam(required = false) int value, Model model) {
+        return "index";
+    }
+
     @GetMapping("/hello-world")
     public String helloWorld() {
         return "hello-world";
